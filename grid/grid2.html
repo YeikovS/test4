@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/grid/modernizr-custom (1).js"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #container{
+            display: grid;
+            width: 80%;
+            height: 250px;
+            grid-template-areas:"firstnav firstnav1 firstnav2"
+                                "header header2 header3"
+                                "secondnav secondnav1 secondnav2"
+                                "aside section section2"
+                                "aside2 nav2 nav3"
+                                "footer footer2 footer3";
+            grid-template-columns: 1fr 1fr 2fr;
+            grid-gap: 2px;
+            grid-template-rows: 10% 30% 10% 60% 10% 10%;
+            margin: 0 auto;
+        }
+        .header{
+            grid-area: header;
+            color: white;
+            background-color: blueviolet;
+        }
+        .header2{
+            grid-area: header2;
+            color: white;
+            background-color: blueviolet;
+        }
+        .header3{
+            grid-area: header3;
+            color: white;
+            background-color: blueviolet;
+        }
+        .firstnav{
+            grid-area: firstnav;
+            color: white;
+            background-color: rgb(226, 110, 43);
+        }
+        .firstnav1{
+            grid-area: firstnav1;
+            color: white;
+            background-color: rgb(226, 110, 43);
+        }
+        .firstnav2{
+            grid-area: firstnav2;
+            color: white;
+            background-color: rgb(226, 110, 43);
+        }
+        .secondnav{
+            grid-area: secondnav;
+            color: white;
+            background-color: aqua;
+        }
+        .secondnav1{
+            grid-area: secondnav1;
+            color: white;
+            background-color: aqua;
+        }
+        .secondnav2{
+            grid-area: secondnav2;
+            color: white;
+            background-color: aqua;
+        }
+        .nav2{
+            grid-area: nav2;
+            color: white;
+            background-color: rgb(226, 110, 43);
+        }
+        .nav3{
+            grid-area: nav3;
+            color: white;
+            background-color: rgb(226, 110, 43);
+        }
+        .aside{
+            grid-area: aside;
+            background-color: rgb(211, 19, 179);
+            color: white;
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .aside2{
+            grid-area: aside2;
+            background-color: rgb(211, 19, 179);
+            color: white;
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .section{
+            grid-area: section;
+            color: white;
+            background-color: rgb(24, 9, 231);
+        }
+        .section2{
+            grid-area: section2;
+            color: white;
+            background-color: rgb(9, 231, 120);
+        }
+        .footer{
+            grid-area: footer;
+            color: white;
+            background-color: brown;
+        }
+        .footer2{
+            grid-area: footer2;
+            color: white;
+            background-color: brown;
+        }
+        .footer3{
+            grid-area: footer3;
+            color: white;
+            background-color: brown;
+        }
+        @media (max-width: 300px){
+            .aside{
+
+                background-color: chartreuse;
+                font-size: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="header">head</div>
+        <div class="header2">head</div>
+        <div class="header3">head</div>
+        <div class="firstnav">nav</div>
+        <div class="firstnav1">nav</div>
+        <div class="firstnav2">nav</div>
+        <div class="secondnav">nav</div>
+        <div class="secondnav1">nav</div>
+        <div class="secondnav2">nav</div>
+        <div class="nav2">nav</div>
+        <div class="nav3">nav</div>
+        <div class="aside">aside</div>
+        <div class="aside2">aside</div>
+        <div class="section">caja1</div>
+        <div class="section2">caja2</div>
+        <div class="footer">footer</div>
+        <div class="footer2">footer</div>
+        <div class="footer3">footer</div>
+    </div>
+</body>
+</html>
